@@ -152,7 +152,7 @@
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<outputDirectory>bin</outputDirectory>
-		<testSourceDirectory>src-test</testSourceDirectory>
+		<testSourceDirectory>test</testSourceDirectory>
 		<defaultGoal>compile</defaultGoal>
 
 		<resources>
@@ -167,7 +167,7 @@
 
 		<testResources>
 			<testResource>
-				<directory>src-test</directory>
+				<directory>test</directory>
 				<includes>
 					<include>org/graphstream/**/test/data/**</include>
 				</includes>
@@ -321,6 +321,17 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.7.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>3.0.0</version>
+			</plugin>
+
 		</plugins>
 	</build>
 	<reporting>
