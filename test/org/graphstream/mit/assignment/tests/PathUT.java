@@ -20,7 +20,7 @@ import org.junit.Test;
 public class PathUT {
 
   @Before
-  public static void setUp() {
+  public void setUp() {
     System.out.println("+-----------------------------PathUT------------------------------+");
   }
 
