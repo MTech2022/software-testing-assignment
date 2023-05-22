@@ -22,8 +22,8 @@ mvn jacoco:report
 ---
 
 ## generate Jacoco report : screenshots added in codebase
-[screenshots](https://github.com/MTech2022/software-testing-assignment/tree/dev/screenshots)
-[Test run result](https://github.com/MTech2022/software-testing-assignment/blob/dev/test_run_result.txt)
+- [screenshots](https://github.com/MTech2022/software-testing-assignment/tree/dev/screenshots)
+- [Test run result](https://github.com/MTech2022/software-testing-assignment/blob/dev/test_run_result.txt)
 
 ---
 
