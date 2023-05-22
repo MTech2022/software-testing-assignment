@@ -11,9 +11,7 @@ import org.graphstream.graph.Node;
 import org.graphstream.graph.implementations.MultiGraph;
 import org.graphstream.graph.implementations.SingleGraph;
 import org.junit.After;
-import org.junit.Assert;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
@@ -21,18 +19,14 @@ import org.junit.Test;
  */
 public class SingleGraphUT {
 
-  private static SingleGraph graph = new SingleGraph("SINGLE_GRAPH_ID");
-
-  @BeforeClass
-  public static void testSetup() {
-    Node n1 = graph.addNode("node1");
-    Node n2 = graph.addNode("node2");
-    graph.addEdge("n1-n2", n1, n2);
-  }
+  private SingleGraph graph = new SingleGraph("SINGLE_GRAPH_ID");
 
   @Before
   public void beforeEach() {
     System.out.println("-----------------------------SingleGraphUT-----------------------------------");
+    Node n1 = graph.addNode("node1");
+    Node n2 = graph.addNode("node2");
+    graph.addEdge("n1-n2", n1, n2);
   }
 
   @After

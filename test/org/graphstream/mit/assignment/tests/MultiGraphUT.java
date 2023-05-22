@@ -13,10 +13,10 @@ import org.junit.Test;
 
 public class MultiGraphUT {
 
-  private static MultiGraph graph = new MultiGraph("MTECH_MULTI_GRAPH");
+  private MultiGraph graph = new MultiGraph("MTECH_MULTI_GRAPH");
 
   @Before
-  public static void setUp() {
+  public void setUp() {
     System.out.println("+-----------------------------MultiGraphUT------------------------------+");
     Node n1 = graph.addNode("node1");
     Node n2 = graph.addNode("node2");

@@ -6,18 +6,11 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 /**
- * Team Members : Sandeep M(220928012)
- *                Umadevi KS(220928007)
- * This class holds all the test classes. It acts as primary Class for all Tests
- * AdjancyListGraphUT.class file is unit test class
- * GraphModificationUT.class file is unit test class
- * GraphNodeEdgeUT.class file is unit test class
- * GraphUT.class file is unit test class
- * GraphWithFaultsUT.class file is unit test class
- * MultiGraphNodeEdgeUT.class file is unit test class
- * PathTestUT.class file is unit test class
- * SingleGraphUT.class file is unit test class
- * TestSuite.class file contains the suite to execute as test suite
+ * Team Members : Sandeep M(220928012) Umadevi KS(220928007) This class holds all the test classes. It acts as primary
+ * Class for all Tests AdjancyListGraphUT.class file is unit test class GraphModificationUT.class file is unit test
+ * class GraphNodeEdgeUT.class file is unit test class GraphUT.class file is unit test class GraphWithFaultsUT.class
+ * file is unit test class MultiGraphNodeEdgeUT.class file is unit test class PathTestUT.class file is unit test class
+ * SingleGraphUT.class file is unit test class TestSuite.class file contains the suite to execute as test suite
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
@@ -35,15 +28,15 @@ import org.junit.runners.Suite;
 })
 public class TestSuite {
 
-    @Before
-    public void setUp(){
-        System.out.println("+***************** [TEST_SUITE] ****************************************+");
-    }
+  @Before
+  public void setUp() {
+    System.out.println("+***************** [TEST_SUITE] ****************************************+");
+  }
 
-    @After
-    public void afterEach(){
-        System.out.println("+**************************************************************************+");
-    }
+  @After
+  public void afterEach() {
+    System.out.println("+**************************************************************************+");
+  }
 
-    // no tests to run in this class
+  // no tests to run in this class
 }
