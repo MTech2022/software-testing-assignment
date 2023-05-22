@@ -1,0 +1,459 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< org.graphstream:gs-core >-----------------------
+[INFO] Building gs-core 2.1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ gs-core ---
+[INFO] Deleting D:\Study\assignments\software-testing-assignment\target
+[INFO] Deleting D:\Study\assignments\software-testing-assignment\bin
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.5:prepare-agent (default-prepare-agent) @ gs-core ---
+[INFO] argLine set to -javaagent:C:\\Users\\sesa455669\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.5\\org.jacoco.agent-0.8.5-runtime.jar=destfile=D:\\Study\\assignments\\software-testing-assignment\\target\\jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:compile (default-compile) @ gs-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 221 source files to D:\Study\assignments\software-testing-assignment\bin
+[INFO] /D:/Study/assignments/software-testing-assignment/src/org/graphstream/stream/file/FileSourceXML.java: Some input files use unchecked or unsafe operations.
+[INFO] /D:/Study/assignments/software-testing-assignment/src/org/graphstream/stream/file/FileSourceXML.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 15 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:testCompile (default-testCompile) @ gs-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 51 source files to D:\Study\assignments\software-testing-assignment\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M3:test (default-test) @ gs-core ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.graphstream.graph.test.PathTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in org.graphstream.graph.test.PathTest
+[INFO] Running org.graphstream.graph.test.TestAbstractElement
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.graphstream.graph.test.TestAbstractElement
+[INFO] Running org.graphstream.graph.test.TestElement
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.graphstream.graph.test.TestElement
+[INFO] Running org.graphstream.graph.test.TestElementAttributeConcurrency
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.819 s - in org.graphstream.graph.test.TestElementAttributeConcurrency
+[INFO] Running org.graphstream.graph.test.TestGraph
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.graphstream.graph.test.TestGraph
+[INFO] Running org.graphstream.graph.test.TestGraphSynchronisation
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.graphstream.graph.test.TestGraphSynchronisation
+[INFO] Running org.graphstream.mit.assignment.tests.TestSuite
+-----------------------------SingleGraphUT-----------------------------------
+Assert 'testAddNode' 
+------------------------------------------------------------------------------
+
+-----------------------------SingleGraphUT-----------------------------------
+Assert 'testSingleGraphEdgesBasics' 
+------------------------------------------------------------------------------
+
+-----------------------------SingleGraphUT-----------------------------------
+Assert 'singleGraphNotConnectedNodeTest' 
+------------------------------------------------------------------------------
+
+-----------------------------SingleGraphUT-----------------------------------
+Assert 'singleGraphNotMultiTest' 
+------------------------------------------------------------------------------
+
+-----------------------------SingleGraphUT-----------------------------------
+Assert 'singleGraphEdgeTest' 
+------------------------------------------------------------------------------
+
+-----------------------------SingleGraphUT-----------------------------------
+Assert 'testSingleGraphNodes' 
+------------------------------------------------------------------------------
+
+-----------------------------SingleGraphUT-----------------------------------
+Assert 'testEdgeAddition' 
+------------------------------------------------------------------------------
+
+-----------------------------SingleGraphUT-----------------------------------
+Assert 'testSingleGraphBasics' 
+------------------------------------------------------------------------------
+
+-----------------------------SingleGraphUT-----------------------------------
+Assert 'testSingleGraphEdges1' 
+------------------------------------------------------------------------------
+
+-----------------------------SingleGraphUT-----------------------------------
+Assert 'testRemoveNode' 
+------------------------------------------------------------------------------
+
+-----------------------------SingleGraphUT-----------------------------------
+Assert 'singleGraphLoopTest' 
+------------------------------------------------------------------------------
+
+-----------------------------SingleGraphUT-----------------------------------
+Assert 'singleGraphNodeDegreeTest' 
+------------------------------------------------------------------------------
+
+-----------------------------SingleGraphUT-----------------------------------
+Assert 'testEdgeRemoval' 
+------------------------------------------------------------------------------
+
++-----------------------------GraphModificationUT------------------------------+
+ERROR : org.graphstream.graph.ElementNotFoundException: Node 'Node1'
++------------------------------------------------------------------------------+
+
++-----------------------------GraphModificationUT------------------------------+
+Assert 'SingleGraph' instance
++------------------------------------------------------------------------------+
+
++-----------------------------GraphModificationUT------------------------------+
+Assert 'Edge' from 'SingleGraph' instance
++------------------------------------------------------------------------------+
+
++-----------------------------GraphModificationUT------------------------------+
+Assert 'Edge' from 'SingleGraph' instance
++------------------------------------------------------------------------------+
+
++-----------------------------GraphModificationUT------------------------------+
+ERROR : org.graphstream.graph.ElementNotFoundException: Node 'Node1'
++------------------------------------------------------------------------------+
+
++-----------------------------GraphNodeEdgeUT--------------------------------+
+Assert 'SingleGraph' instance has nodes Node1, Node2
++------------------------------------------------------------------------------+
+
++-----------------------------GraphNodeEdgeUT--------------------------------+
+Assert 'SingleGraph' instance has nodes has no edges
++------------------------------------------------------------------------------+
+
++-----------------------------GraphNodeEdgeUT--------------------------------+
+Assert 'SingleGraph' instance has nodes has edge
++------------------------------------------------------------------------------+
+
++-----------------------------GraphNodeEdgeUT--------------------------------+
+Assert 'SingleGraph' instance has no Node1
+Assert 'SingleGraph' instance has Node2
++------------------------------------------------------------------------------+
+
++-----------------------------GraphNodeEdgeUT--------------------------------+
+Assert 'SingleGraph' instance
+Assert 'SingleGraph' instance has 'MTECH_GRAPH' id 
++------------------------------------------------------------------------------+
+
++-----------------------------GraphUT------------------------------+
+Assert 'testGraphStructureAfterModifications' 
++------------------------------------------------------------------------------+
+
++-----------------------------GraphUT------------------------------+
+Assert 'testAddNodesToGraph' 
++------------------------------------------------------------------------------+
+
++-----------------------------GraphUT------------------------------+
+Assert 'testRemoveEdgesFromGraph' 
++------------------------------------------------------------------------------+
+
++-----------------------------GraphUT------------------------------+
+Assert 'testAddEdgesToGraph' 
++------------------------------------------------------------------------------+
+
++-----------------------------GraphUT------------------------------+
+Assert 'testRemoveNodesFromGraph' 
++------------------------------------------------------------------------------+
+
++-----------------------------GraphWithFaultsUT------------------------------+
+assert 'testAddNodesToGraph' 
++------------------------------------------------------------------------------+
+
++-----------------------------GraphWithFaultsUT------------------------------+
+assert 'testAddEdgesToGraph' 
++------------------------------------------------------------------------------+
+
++-----------------------------GraphWithFaultsUT------------------------------+
+assert 'testRemoveNodesFromGraph' 
++------------------------------------------------------------------------------+
+
++-----------------------------GraphNodeEdgeUT--------------------------------+
+Assert 'SingleGraph' instance has nodes Node1, Node2
++------------------------------------------------------------------------------+
+
++-----------------------------GraphNodeEdgeUT--------------------------------+
+Assert 'SingleGraph' instance has nodes has no edges
++------------------------------------------------------------------------------+
+
++-----------------------------GraphNodeEdgeUT--------------------------------+
+Assert 'SingleGraph' instance has nodes has edge
++------------------------------------------------------------------------------+
+
++-----------------------------GraphNodeEdgeUT--------------------------------+
+Assert 'SingleGraph' instance has no Node1
+Assert 'SingleGraph' instance has Node2
++------------------------------------------------------------------------------+
+
++-----------------------------GraphNodeEdgeUT--------------------------------+
+Assert 'SingleGraph' instance
+Assert 'SingleGraph' instance has 'MTECH_GRAPH' id 
++------------------------------------------------------------------------------+
+
++-----------------------------AdjancyListGraphUT------------------------------+
+Assert 'AdjacencyListGraph' contains the edge 'ABEdge'
+Assert 'AdjacencyListGraph' passing 'null' id for the edge
++------------------------------------------------------------------------------+
+
++-----------------------------AdjancyListGraphUT------------------------------+
+Assert 'AdjacencyListGraph' instance
+Assert 'AdjacencyListGraph' is loop
+Assert 'AdjacencyListGraph' contains the node 'A' and 'AB' 
++------------------------------------------------------------------------------+
+
++-----------------------------MultiGraphNodeEdgeUT------------------------------+
+assert 'MultiGraphNodeEdgeUT' instance
+assert 'MultiGraphNodeEdgeUT' instance id is 'MTECH_GRAPH' : FAILURE 
++------------------------------------------------------------------------------+
+
++-----------------------------MultiGraphNodeEdgeUT------------------------------+
+assert 'MultiGraphNodeEdgeUT' instance has nodes
++------------------------------------------------------------------------------+
+
++-----------------------------MultiGraphNodeEdgeUT------------------------------+
+assert 'MultiGraphNodeEdgeUT' instance has nodes without edge
++------------------------------------------------------------------------------+
+
++-----------------------------MultiGraphNodeEdgeUT------------------------------+
+assert 'MultiGraphNodeEdgeUT' instance has nodes and edge
++------------------------------------------------------------------------------+
+
++-----------------------------MultiGraphNodeEdgeUT------------------------------+
+assert 'MultiGraphNodeEdgeUT' instance has nodes
++------------------------------------------------------------------------------+
+
++-----------------------------MultiGraphNodeEdgeUT------------------------------+
++------------------------------------------------------------------------------+
+
++-----------------------------MultiGraphNodeEdgeUT------------------------------+
+assert 'MultiGraphNodeEdgeUT' instance has nodes and edge : FAILURE, NODE_A is removed 
++------------------------------------------------------------------------------+
+
++-----------------------------PathTestUT------------------------------+
+assert 'PathTestUT' contains root node
++------------------------------------------------------------------------------+
+
++-----------------------------PathTestUT------------------------------+
++------------------------------------------------------------------------------+
+
++-----------------------------PathTestUT------------------------------+
+assert 'PathTestUT' IllegalArgumentException exception
++------------------------------------------------------------------------------+
+
++-----------------------------PathTestUT------------------------------+
++------------------------------------------------------------------------------+
+
++-----------------------------PathTestUT------------------------------+
+assert 'PathTestUT' edgeCount
++------------------------------------------------------------------------------+
+
++-----------------------------PathTestUT------------------------------+
++------------------------------------------------------------------------------+
+
++-----------------------------PathTestUT------------------------------+
+assert 'PathTestUT' nodeCount
++------------------------------------------------------------------------------+
+
++-----------------------------PathTestUT------------------------------+
+assert 'PathTestUT' duplicate path contains the node copied
++------------------------------------------------------------------------------+
+
++-----------------------------MultiGraphUT------------------------------+
++------------------------------------------------------------------------------+
+
++-----------------------------MultiGraphUT------------------------------+
+assert 'testAddNode' 
++------------------------------------------------------------------------------+
+
++-----------------------------MultiGraphUT------------------------------+
++------------------------------------------------------------------------------+
+
++-----------------------------MultiGraphUT------------------------------+
+assert 'testEdgeAddition' 
++------------------------------------------------------------------------------+
+
++-----------------------------MultiGraphUT------------------------------+
++------------------------------------------------------------------------------+
+
++-----------------------------MultiGraphUT------------------------------+
++------------------------------------------------------------------------------+
+
++-----------------------------MultiGraphUT------------------------------+
+assert 'testRemoveNode' 
++------------------------------------------------------------------------------+
+
++-----------------------------MultiGraphUT------------------------------+
++------------------------------------------------------------------------------+
+
++-----------------------------MultiGraphUT------------------------------+
+assert 'testEdgeRemoval' 
++------------------------------------------------------------------------------+
+
++-----------------------------PathUT------------------------------+
+assert 'testAddNodesToGraph' 
++------------------------------------------------------------------------------+
+
++-----------------------------PathUT------------------------------+
+assert 'rootPathSetRootMethodTest' 
++------------------------------------------------------------------------------+
+
++-----------------------------PathUT------------------------------+
+assert 'removeLoopsTest' 
++------------------------------------------------------------------------------+
+
++-----------------------------PathUT------------------------------+
+assert 'circularPathTest' 
++------------------------------------------------------------------------------+
+
++-----------------------------PathUT------------------------------+
+assert 'rootPathAddMethodTest' 
++------------------------------------------------------------------------------+
+
+[ERROR] Tests run: 67, Failures: 11, Errors: 1, Skipped: 0, Time elapsed: 0.031 s <<< FAILURE! - in org.graphstream.mit.assignment.tests.TestSuite
+[ERROR] singleGraphNotMultiTest(org.graphstream.mit.assignment.tests.SingleGraphUT)  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<edge_1[node_1--node_2]>
+	at org.graphstream.mit.assignment.tests.SingleGraphUT.singleGraphNotMultiTest(SingleGraphUT.java:203)
+
+[ERROR] testAddNodesToGraph(org.graphstream.mit.assignment.tests.GraphModificationUT)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at org.graphstream.mit.assignment.tests.GraphModificationUT.testAddNodesToGraph(GraphModificationUT.java:34)
+
+[ERROR] testRemoveNodesFromGraph(org.graphstream.mit.assignment.tests.GraphModificationUT)  Time elapsed: 0.001 s  <<< ERROR!
+org.graphstream.graph.ElementNotFoundException: Node "Node1"
+	at org.graphstream.mit.assignment.tests.GraphModificationUT.testRemoveNodesFromGraph(GraphModificationUT.java:52)
+
+[ERROR] testAddNodesToGraph(org.graphstream.mit.assignment.tests.GraphUT)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<Node2>
+	at org.graphstream.mit.assignment.tests.GraphUT.testAddNodesToGraph(GraphUT.java:35)
+
+[ERROR] testRemoveEdgesFromGraph(org.graphstream.mit.assignment.tests.GraphUT)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at org.graphstream.mit.assignment.tests.GraphUT.testRemoveEdgesFromGraph(GraphUT.java:72)
+
+[ERROR] testAddEdgesToGraph(org.graphstream.mit.assignment.tests.GraphUT)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<Edge1[Node1--Node2]>
+	at org.graphstream.mit.assignment.tests.GraphUT.testAddEdgesToGraph(GraphUT.java:48)
+
+[ERROR] testRemoveNodesFromGraph(org.graphstream.mit.assignment.tests.GraphUT)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at org.graphstream.mit.assignment.tests.GraphUT.testRemoveNodesFromGraph(GraphUT.java:60)
+
+[ERROR] testAddNodesToGraph(org.graphstream.mit.assignment.tests.GraphWithFaultsUT)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at org.graphstream.mit.assignment.tests.GraphWithFaultsUT.testAddNodesToGraph(GraphWithFaultsUT.java:42)
+
+[ERROR] testAddEdgesToGraph(org.graphstream.mit.assignment.tests.GraphWithFaultsUT)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at org.graphstream.mit.assignment.tests.GraphWithFaultsUT.testAddEdgesToGraph(GraphWithFaultsUT.java:54)
+
+[ERROR] testCreateAdjancyListGraphInstanceWithFault(org.graphstream.mit.assignment.tests.AdjancyListGraphUT)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: Graph elements cannot have a null identifier
+	at org.graphstream.mit.assignment.tests.AdjancyListGraphUT.testCreateAdjancyListGraphInstanceWithFault(AdjancyListGraphUT.java:84)
+
+[ERROR] testCreateNewGraphFailure(org.graphstream.mit.assignment.tests.MultiGraphNodeEdgeUT)  Time elapsed: 0.001 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<MTECH_[]GRAPH> but was:<MTECH_[MULTI_]GRAPH>
+	at org.graphstream.mit.assignment.tests.MultiGraphNodeEdgeUT.testCreateNewGraphFailure(MultiGraphNodeEdgeUT.java:43)
+
+[ERROR] testRemoveNodesFromGraphWIthFault(org.graphstream.mit.assignment.tests.MultiGraphNodeEdgeUT)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at org.graphstream.mit.assignment.tests.MultiGraphNodeEdgeUT.testRemoveNodesFromGraphWIthFault(MultiGraphNodeEdgeUT.java:88)
+
+[INFO] Running org.graphstream.stream.file.dgs.test.TestDGSParser
+[<DGS stream 106988b0932f8>:1] step 0.0 begins
+[<DGS stream 106988b0932f8>:2] add node "A"
+[<DGS stream 106988b0932f8>:3] set node "A" +"attribute"="content"
+[<DGS stream 106988b0932f8>:4] step 1.0 begins
+[<DGS stream 106988b0932f8>:5] set node "A" "attribute"="content 2"
+[<DGS stream 106988b0932f8>:6] step 2.0 begins
+[<DGS stream 106988b0932f8>:7] set node "A" -"attribute"
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.graphstream.stream.file.dgs.test.TestDGSParser
+[INFO] Running org.graphstream.stream.file.test.TestFileSinkDGS
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.352 s - in org.graphstream.stream.file.test.TestFileSinkDGS
+[INFO] Running org.graphstream.stream.file.test.TestFileSinkDOT
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.graphstream.stream.file.test.TestFileSinkDOT
+[INFO] Running org.graphstream.stream.file.test.TestFileSinkGraphML
+[WARNING] Tests run: 7, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.039 s - in org.graphstream.stream.file.test.TestFileSinkGraphML
+[INFO] Running org.graphstream.stream.file.test.TestFileSourceDGS
+Redirect to URL : https://graphstream-project.org/media/data/undirectedTriangle.dgs
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.228 s - in org.graphstream.stream.file.test.TestFileSourceDGS
+[INFO] Running org.graphstream.stream.file.test.TestFileSourceDOT
+Redirect to URL : https://graphstream-project.org/media/data/undirectedTriangle.dot
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.394 s - in org.graphstream.stream.file.test.TestFileSourceDOT
+[INFO] Running org.graphstream.stream.file.test.TestFileSourceEdge
+Redirect to URL : https://graphstream-project.org/media/data/undirectedTriangle.edge
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.309 s - in org.graphstream.stream.file.test.TestFileSourceEdge
+[INFO] Running org.graphstream.stream.file.test.TestFileSourceGEXF
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.graphstream.stream.file.test.TestFileSourceGEXF
+[INFO] Running org.graphstream.stream.file.test.TestFileSourceGML
+Redirect to URL : https://graphstream-project.org/media/data/undirectedTriangle.gml
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.31 s - in org.graphstream.stream.file.test.TestFileSourceGML
+[INFO] Running org.graphstream.stream.file.test.TestFileSourceGraphML
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.graphstream.stream.file.test.TestFileSourceGraphML
+[INFO] Running org.graphstream.stream.net.test.TestRMI
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s - in org.graphstream.stream.net.test.TestRMI
+[INFO] Running org.graphstream.stream.netstream.test.TestNetStreamDecoder
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.graphstream.stream.netstream.test.TestNetStreamDecoder
+[INFO] Running org.graphstream.stream.netstream.test.TestNetStreamEncoder
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.graphstream.stream.netstream.test.TestNetStreamEncoder
+[INFO] Running org.graphstream.stream.netstream.test.TestNetStreamUtils
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.graphstream.stream.netstream.test.TestNetStreamUtils
+[INFO] Running org.graphstream.stream.sync.TestSync
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.graphstream.stream.sync.TestSync
+[INFO] Running org.graphstream.stream.test.TestAnnotatedSink
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.graphstream.stream.test.TestAnnotatedSink
+[INFO] Running org.graphstream.stream.test.TestAutoCreateInStreams
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.graphstream.stream.test.TestAutoCreateInStreams
+[INFO] Running org.graphstream.stream.test.TestSourceBase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.205 s - in org.graphstream.stream.test.TestSourceBase
+[INFO] Running org.graphstream.stream.thread.test.TestThreadProxyPipe
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.368 s - in org.graphstream.stream.thread.test.TestThreadProxyPipe
+[INFO] Running org.graphstream.ui.graphicGraph.parser.test.TestStyleSheet
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s - in org.graphstream.ui.graphicGraph.parser.test.TestStyleSheet
+[INFO] Running org.graphstream.ui.graphicGraph.test.TestGraphicGraph
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.graphstream.ui.graphicGraph.test.TestGraphicGraph
+[INFO] Running org.graphstream.ui.graphicGraph.test.TestGraphSynchronisationProxyThread
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.025 s - in org.graphstream.ui.graphicGraph.test.TestGraphSynchronisationProxyThread
+[INFO] Running org.graphstream.util.test.TestDisplay
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.graphstream.util.test.TestDisplay
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   AdjancyListGraphUT.testCreateAdjancyListGraphInstanceWithFault:84 Graph elements cannot have a null identifier
+[ERROR]   GraphModificationUT.testAddNodesToGraph:34
+[ERROR]   GraphUT.testAddEdgesToGraph:48 expected null, but was:<Edge1[Node1--Node2]>
+[ERROR]   GraphUT.testAddNodesToGraph:35 expected null, but was:<Node2>
+[ERROR]   GraphUT.testRemoveEdgesFromGraph:72
+[ERROR]   GraphUT.testRemoveNodesFromGraph:60
+[ERROR]   GraphWithFaultsUT.testAddEdgesToGraph:54
+[ERROR]   GraphWithFaultsUT.testAddNodesToGraph:42
+[ERROR]   MultiGraphNodeEdgeUT.testCreateNewGraphFailure:43 expected:<MTECH_[]GRAPH> but was:<MTECH_[MULTI_]GRAPH>
+[ERROR]   MultiGraphNodeEdgeUT.testRemoveNodesFromGraphWIthFault:88
+[ERROR]   SingleGraphUT.singleGraphNotMultiTest:203 expected null, but was:<edge_1[node_1--node_2]>
+[ERROR] Errors: 
+[ERROR]   GraphModificationUT.testRemoveNodesFromGraph:52 » ElementNotFound Node "Node1"
+[INFO] 
+[ERROR] Tests run: 216, Failures: 11, Errors: 1, Skipped: 3
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  15.347 s
+[INFO] Finished at: 2023-05-22T16:49:26+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M3:test (default-test) on project gs-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to D:\Study\assignments\software-testing-assignment\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
